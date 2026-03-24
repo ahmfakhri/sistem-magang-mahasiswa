@@ -91,4 +91,4 @@ Sebagai contoh, relasi antara Mahasiswa, Pengajuan, dan Magang digunakan untuk m
 Saya juga memahami bagaimana keyword seperti `this` digunakan untuk mereferensikan object yang sedang aktif dalam proses tersebut.
 
 ### 3. Pengembangan
-Menambahkan fitur login dan penyimpanan database.
+Jika sistem ini dikembangkan lebih lanjut, dapat ditambahkan fitur login serta penyimpanan data menggunakan database.
