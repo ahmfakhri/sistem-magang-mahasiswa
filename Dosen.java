@@ -3,16 +3,14 @@ import java.util.ArrayList;
 public class Dosen extends User {
     private String nidn;
     private String nama;
-    private String no_hp;
 
     public Dosen(int id, String username, String email, String password,
-                 String nidn, String nama, String no_hp) {
+                 String nidn, String nama) {
 
         super(id, username, email, password, "Dosen");
 
         this.nidn = nidn;
         this.nama = nama;
-        this.no_hp = no_hp;
     }
 
     public String getNama() {

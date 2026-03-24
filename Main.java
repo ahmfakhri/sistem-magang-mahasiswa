@@ -15,13 +15,13 @@ public class Main {
         // ===== DATA AWAL =====
         Admin admin = new Admin(1, "admin", "admin@mail.com", "123", "Administrator");
 
-        listMahasiswa.add(new Mahasiswa(1, "Fakhri", "fakhri@gmail.com", "123", "250215003", "Fakhri", "08123", 3.5));
+        listMahasiswa.add(new Mahasiswa(1, "Fakhri", "fakhri@gmail.com", "123", "250215003", "Fakhri", 3.5));
         listPerusahaan.add(new Perusahaan("Google", "google@mail.com", "USA"));
         listPerusahaan.add(new Perusahaan("Tokopedia", "tokopedia@mail.com", "Indonesia"));
         listDosen.add(new Dosen(1, "dosen1", "d1@mail.com", "123",
-        "001", "Pak Harto", "0812"));
+        "001", "Pak Harto"));
         listDosen.add(new Dosen(2, "dosen2", "d2@mail.com", "123",
-        "002", "Bu Sri", "0822"));
+        "002", "Bu Sri"));
 
         while (true) {
             System.out.println("\n=== MASUK SEBAGAI ===");

@@ -1,17 +1,15 @@
 public class Mahasiswa extends User {
     private String npm;
     private String nama;
-    private String no_hp;
     private double ipk;
 
     public Mahasiswa(int id, String username, String email, String password,
-                     String npm, String nama, String no_hp, double ipk) {
+                     String npm, String nama, double ipk) {
 
         super(id, username, email, password, "Mahasiswa");
 
         this.npm = npm;
         this.nama = nama;
-        this.no_hp = no_hp;
         this.ipk = ipk;
     }
 
@@ -21,10 +19,6 @@ public class Mahasiswa extends User {
 
     public String getNpm() {
         return npm;
-    }
-
-    public String getNo_hp() {
-        return no_hp;
     }
 
     public double getIpk() {
@@ -43,6 +37,7 @@ public class Mahasiswa extends User {
                 System.out.println("\n=== DATA PENGAJUAN ===");
                 System.out.println("Perusahaan : " + p.getPerusahaan().getNama());
                 System.out.println("Status : " + p.getStatus());
+                System.out.println("Alasan : " + p.getAlasan());
                 ada = true;
             }
         }

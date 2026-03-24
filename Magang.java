@@ -12,6 +12,10 @@ public class Magang {
         return mahasiswa;
     }
 
+    public Perusahaan getPerusahaan() {
+        return perusahaan;
+    }
+
     public Dosen getDosen() {
         return dosen;
     }
@@ -27,7 +31,5 @@ public class Magang {
         }
     }
 
-    public Perusahaan getPerusahaan() {
-    return perusahaan;
-}
+    
 }

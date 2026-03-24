@@ -8,8 +8,16 @@ public class Perusahaan {
         this.alamat = alamat;
     }
 
+    public int getIdPerusahaan() {
+        return id_perusahaan;
+    }
+
     public String getNama() {
         return nama;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getAlamat() {

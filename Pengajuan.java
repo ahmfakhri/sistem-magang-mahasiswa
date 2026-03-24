@@ -28,6 +28,10 @@ public class Pengajuan {
         return status;
     }
 
+    public String getAlasan() {
+        return alasan;
+    }
+
     public Mahasiswa getMahasiswa() {
         return mahasiswa;
     }
@@ -50,5 +54,6 @@ public class Pengajuan {
            " - IPK: " + mahasiswa.getIpk() +
            "\n   Perusahaan : " + perusahaan.getNama() +
            "\n   Status     : " + status;
+           
     }   
 }
