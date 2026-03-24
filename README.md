@@ -1,9 +1,85 @@
-| Class          | Atribut                                             | Method                                                                                                                           |
-| -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **User**       | id, username, email, password, role                 | getUsername(), getRole()                                                                                                         |
-| **Admin**      | nama                                                | prosesPengajuan(), tentukanDosen() |
-| **Mahasiswa**  | npm, nama, no_hp, ipk                               | getNama(), getNpm(), getIpk(), ajukanMagang(), lihatPengajuan(), lihatMagang()                                                   |
-| **Dosen**      | nidn, nama, no_hp                                   | getNama(), getNidn(), lihatMahasiswaBimbingan()                                                                                  |
-| **Perusahaan** | id_perusahaan, nama, email, alamat                  | getNama(), getAlamat()                                                                                                           |
-| **Pengajuan**  | id_pengajuan, status, alasan, mahasiswa, perusahaan | setStatus(), setAlasan(), getStatus(), getMahasiswa(), getPerusahaan(), tampilkanDetail(), tampilkanList()                       |
-| **Magang**     | mahasiswa, perusahaan, dosen                        | setDosenPembimbing(), getMahasiswa(), getPerusahaan(), getDosen(), tampilkanInfo()                                               |
+# Sistem Pengajuan Magang Mahasiswa (Java)
+
+## 1. Analisis Sistem
+
+### Class yang digunakan:
+- User
+- Admin
+- Mahasiswa
+- Dosen
+- Perusahaan
+- Pengajuan
+- Magang
+
+### Tabel Class
+
+| Class | Atribut | Method |
+|------|--------|--------|
+| User | id, username, email, password, role | getUsername(), getRole() |
+| Admin | nama | prosesStatusPengajuan(), tentukanDosen() |
+| Mahasiswa | npm, nama, no_hp, ipk | ajukanMagang(), lihatPengajuan(), lihatMagang() |
+| Dosen | nidn, nama, no_hp | lihatMahasiswaBimbingan() |
+| Perusahaan | id_perusahaan, nama, email, alamat | getNama(), getAlamat() |
+| Pengajuan | status, alasan, mahasiswa, perusahaan | setStatus(), getAlasan(), tampilkanList() |
+| Magang | mahasiswa, perusahaan, dosen | setDosenPembimbing(), tampilkanMagang() |
+
+### Relasi:
+- Mahasiswa mengajukan Pengajuan
+- Pengajuan terkait Perusahaan
+- Pengajuan diproses menjadi Magang
+- Magang memiliki Dosen pembimbing
+
+---
+
+## 2. Class Diagram
+
+<img width="1225" height="897" alt="magangdiagram drawio" src="https://github.com/user-attachments/assets/d2533092-e2e5-4722-86a3-fb33d7706526" />
+
+
+---
+
+## 3. Implementasi Program
+
+Program dibuat menggunakan:
+- Java (OOP)
+- ArrayList
+- Percabangan (if/switch)
+- Perulangan (looping)
+- Input user (Scanner)
+
+Fitur:
+- Mahasiswa mengajukan magang
+- Admin memproses pengajuan
+- Penentuan dosen pembimbing
+- Menampilkan data magang
+
+---
+
+## 4. Analisis Konsep PBO
+
+### 1. Class & Object
+Class digunakan seperti Mahasiswa, Dosen, dan Pengajuan. Object dibuat dari class tersebut untuk merepresentasikan data nyata.
+
+### 2. Enkapsulasi
+Atribut dibuat private dan diakses melalui method (getter/setter), sehingga data lebih aman.
+
+### 3. Kelebihan PBO
+Pendekatan PBO memudahkan pengelolaan sistem karena setiap entitas seperti Mahasiswa, Pengajuan, dan Magang direpresentasikan sebagai class yang saling berhubungan.
+Sebagai contoh, ketika status pengajuan diubah menjadi ditolak, maka data magang yang terkait juga dapat dihapus melalui relasi antar object. Hal ini menunjukkan bahwa perubahan pada satu object dapat mempengaruhi object lain secara terstruktur.
+Dengan PBO, alur sistem pengajuan magang menjadi lebih mudah diatur karena setiap class memiliki tanggung jawab masing-masing, seperti Mahasiswa mengajukan magang dan Admin memproses pengajuan.
+
+---
+
+## 5. Refleksi
+
+### 1. Bagian tersulit
+Bagian tersulit adalah memahami alur program dan keterkaitan antar class, terutama dalam kode Java yang cukup kompleks.
+Namun, melalui proses pengerjaan tugas ini saya mulai memahami bagaimana setiap bagian program saling terhubung dan bekerja bersama.
+
+### 2. Hal baru
+Saya mempelajari bagaimana konsep relasi antar object dalam PBO tidak hanya sebagai teori, tetapi dapat diterapkan langsung dalam program untuk menghubungkan dan mengelola data.
+Sebagai contoh, relasi antara Mahasiswa, Pengajuan, dan Magang digunakan untuk menentukan data yang ditampilkan dan memastikan konsistensi data, seperti saat status pengajuan diubah maka data magang yang terkait juga ikut berubah.
+Saya juga memahami bagaimana keyword seperti `this` digunakan untuk mereferensikan object yang sedang aktif dalam proses tersebut.
+
+### 3. Pengembangan
+Menambahkan fitur login dan penyimpanan database.
