@@ -1,4 +1,11 @@
-# Sistem Pengajuan Magang Mahasiswa (Java)
+# Sistem Magang Mahasiswa (Java)
+
+Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Objek (PBO).
+
+## Informasi
+- Nama: Ahmad Fakhri Abdullah
+- NPM: 250215003
+- Kelas: TRPL-1A
 
 ## 1. Analisis Sistem
 
