@@ -25,12 +25,12 @@ Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obj
 | Class | Atribut | Method |
 |------|--------|--------|
 | User | id, username, email, password, role | getUsername(), getRole() |
-| Admin | nama | prosesStatusPengajuan(), tentukanDosen() |
-| Mahasiswa | npm, nama, no_hp, ipk | ajukanMagang(), lihatPengajuan(), lihatMagang() |
-| Dosen | nidn, nama, no_hp | lihatMahasiswaBimbingan() |
-| Perusahaan | id_perusahaan, nama, email, alamat | getNama(), getAlamat() |
-| Pengajuan | status, alasan, mahasiswa, perusahaan | setStatus(), getAlasan(), tampilkanList() |
-| Magang | mahasiswa, perusahaan, dosen | setDosenPembimbing(), tampilkanMagang() |
+| Admin | nama | getNama(), prosesPengajuan(), tentukanDosen() |
+| Mahasiswa | npm, nama, ipk | getNama(), getNpm(), getIpk(), ajukanMagang(), lihatPengajuan(), lihatMagang() |
+| Dosen | nidn, nama | getNama(), getNidn(), lihatMahasiswaBimbingan() |
+| Perusahaan | id_perusahaan, nama, email, alamat | getIdPerusahaan(), getNama(), getEmail(), getAlamat() |
+| Pengajuan | status, alasan, mahasiswa, perusahaan | setStatus(), setAlasan(), getStatus(), getAlasan(), getMahasiswa(), getPerusahaan(), tampilkanDetail(), tampilkanList() |
+| Magang | mahasiswa, perusahaan, dosen | getMahasiswa(), getPerusahaan(), getDosen(), setDosenPembimbing(), tampilkanMagang() |
 
 ### Relasi:
 - Mahasiswa mengajukan Pengajuan
