@@ -20,7 +20,6 @@ public class Admin extends User {
             System.out.println("Perusahaan : " + p.getPerusahaan().getNama());
             System.out.println("Status : " + p.getStatus());
             System.out.println("Alasan : " + p.getAlasan());
-            System.out.println("------------------");
             ada = true;
         }
         if (!ada) {
@@ -37,7 +36,6 @@ public class Admin extends User {
             if (m.getDosen() != null) {
                 System.out.println("Dosen Pembimbing : " + m.getDosen().getNama());
             }
-            System.out.println("------------------");
             ada = true;
         }
         if (!ada) {
