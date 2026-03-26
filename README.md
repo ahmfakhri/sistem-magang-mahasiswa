@@ -73,7 +73,8 @@ Fitur:
 Konsep class dan object diterapkan dengan menjadikan setiap entitas dalam sistem sebagai class, seperti Mahasiswa, Admin, Pengajuan, dan Magang. Object dari class tersebut digunakan untuk menjalankan alur program, misalnya object Mahasiswa membuat object Pengajuan saat mengajukan magang, dan object Admin memproses pengajuan tersebut hingga menghasilkan object Magang.
 
 ### 2. Enkapsulasi
-Atribut dibuat private dan diakses melalui method (getter/setter), sehingga data lebih aman.
+Program menerapkan enkapsulasi dengan menyimpan atribut dalam class sebagai private, sehingga tidak dapat diakses langsung dari luar. Untuk mengakses dan mengubah data, digunakan method getter dan setter seperti getStatus(), setStatus(), dan getMahasiswa().
+Contohnya, atribut status pada class Pengajuan tidak diubah secara langsung, tetapi melalui method setStatus(), sehingga akses terhadap data menjadi lebih terkontrol dan tidak sembarangan.
 
 ### 3. Kelebihan PBO
 Pendekatan PBO memudahkan pengelolaan sistem karena setiap entitas seperti Mahasiswa, Pengajuan, dan Magang direpresentasikan sebagai class yang saling berhubungan.
